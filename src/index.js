@@ -9,12 +9,17 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import EmployeesList from './EmployeesList';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
   },
+  {
+    path: "/Employees",
+    element: <EmployeesList/>
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
